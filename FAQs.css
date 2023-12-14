@@ -1,0 +1,126 @@
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Work Sans', sans-serif;
+      list-style: none;
+      transition: .4s ease-in-out;
+    }
+    header{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      height: 230px;
+      background: url(background-pattern-desktop.svg);
+    }
+    body{
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      background-color: rgb(242, 230, 249);
+    }
+    .attribution { 
+      height: 50px;
+      bottom: 0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      font-size: 11px; 
+      left: 0;
+      
+    }
+    .section_FAQs{
+      width: 450px;
+      height: 390px;
+      background-color:white;
+      padding:20px 30px 30px 30px; 
+      border-radius: 15px;
+      box-shadow: 2px 2px 6px  rgb(0, 0,0,0.3);
+      height: fit-content;
+      
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    
+    }
+    ul li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 12px 0;
+      padding: 17px 0 0 0;
+      border-top: 1px solid rgb(0, 0,0,0.07);
+      
+    }
+    .title{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      gap: 20px;
+      transition: .4s ease-in-out;
+    }
+    .title h1{
+      font-size: 48px;
+      font-weight: bold;
+
+    }
+    ul li span {
+      font-weight: bold;
+
+    }
+    .content h2{
+      font-size: 15px;
+     
+    
+    }
+    #para,#para1,#para2,#para3{
+      transition: .4s ease-in-out;
+      display: none;
+      height: 0;
+    }
+    #para.active,#para1.active,#para2.active,#para3.active{
+    
+    display: flex;
+    height: 100%;
+    }
+    .content p{
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: rgb(0, 0,0,0.3);
+    }
+    .mentor{
+      margin-top: 10px;
+      padding: 10px 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      
+      
+    }
+    @media (max-width:520px) {
+      .section_FAQs{
+        transform: scale(0.8);
+      }
+    }
+    #star{
+    transform: scale(.9);
+
+    }
+    .li_para{
+      border: none;
+      padding: 0px;
+    }
+    #plus1,#plus2,#plus3,#minus{
+      cursor: pointer;
+    }
+   
